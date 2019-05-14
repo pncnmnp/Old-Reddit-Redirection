@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Reddit Redirect",
+	"version": "1.0",
+
+	"description": "Redirects Reddit to old design",
+
+	"icons": {
+		"48": "icons/redirect-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.reddit.com/*"],
+			"js": ["redirect.js"]
+		}
+	]
+}
